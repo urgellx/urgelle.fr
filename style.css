@@ -1,0 +1,136 @@
+li{
+    margin-left: 24px;
+}
+.Tur {
+  font-weight: bold;
+  color: #4d4d4d;
+  float: center;
+  font-family: champagne;
+}
+.Mur {
+  font-weight: bold;
+  color: #4d4d4d;
+  float: center;
+  text-align:center;
+  font-family: champagne;
+}
+em {
+    color: white;
+    font-style: normal;
+}
+body{
+  background-image:url(images/background.jpg);
+}
+.Description {
+  color: #4d4d4d;
+  margin: 0;
+  text-align: center;
+  font-family: champagne;
+  font-size:15px;
+  top: 0px;
+}
+.Left {
+  color: #4d4d4d;
+  font-size:20px;
+  font-weight:bolder;
+  text-align: center;
+  margin : 0;
+  font-family: champagne;
+}
+.favoris {
+  color: #298080;
+  text-align: center;
+  font-size:40px;
+  font-weight:bolder;
+  margin : 0;
+  font-family: bebas;
+  float: left;
+  width: 50%;
+}
+p. {
+  color: #ff9b5e;
+  text-align: center;
+  font-size:20px;
+  font-weight:bolder;
+  margin : 0;
+  font-family: champagne;
+}
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%
+  }
+  .imag {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%
+    }
+
+    div.table-of-contents{
+        position:fixed;
+        top:0;
+        left:0;
+        width:300px;
+        overflow-x:hidden;
+        overflow-y:scroll;
+        height:100%;
+        background-color: #101416;
+        border-right: 0px solid #393939;
+        z-index:200;
+        scrollbar-base-color: #1F1D1D;
+        scrollbar-arrow-color: #b3b3b3;
+        scrollbar-shadow-color: #1F1D1D;
+        scrollbar-track-color : #343131;
+    }
+a {
+    color: #ff9b5e;
+}
+li {
+    color: #ff9b5e;
+    font-family: champagne;
+  }
+
+.photos1 {
+  width: 384px;
+  height: 216px;
+  grid-row-end: 7;
+  grid-column-end: 4;
+}
+.photos {
+  width: 384px;
+  height: 216px;
+}
+.carre {
+  width: 384px;
+}
+  .grid {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    display: grid;
+    grid-gap: 10px;
+  }
+
+
+div.main{
+    position:fixed;
+    top:0;
+    margin-left:600;
+    display:block;
+  }
+    a:link{text-decoration: none;}
+    a:visited{text-decoration: none;}
+    a:hover{text-decoration: none;}
+    a:active{text-decoration: none;}
+
+   @font-face {
+        font-family: 'champagne';
+        src: url('champagne__limousines-webfont.woff2') format('woff2'),
+             url('champagne__limousines-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+
+    }

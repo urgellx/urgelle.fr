@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Urgelle - Ma première contributionf</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
+  </head>
+  <body>
+   <div>
+    <h1 id="articles"><a href="articles">
+    <p class="Left"style="font-size 40px;">Liste d'articles</p>  </a></h1>
+    <table>
+
+      <tr><td bgcolor=#383838><h2>
+      <p class="Mur" style="text-align:center;font-size:30px">Ma première contribution</p></h2>
+    </div></tr></td>
+    <tr><td bgcolor=#383838>
+    <pre class="Tur" style="font-size: 20px;text-align: center">
+      Bonjour, je suis ici pour vous apporter l'information que j'ai enfin réussi
+      à innover, j'ai trouvé une nouvelle solution à un problème lié à un logiciel
+      libre, c'est relativement simple mais j'ai quand même dû me gratter le haut
+      de la tête... Il s'agit de régler l'erreur "invalid input syntax for type bigint"
+      lorsque vous essayez d'exécuter la commande "php artisan user:admin", il suffit
+      de modifier /pixelfed/app/Console/Commands/UserAdmin.php et de remplacer ce qu'il
+      y a à l'intérieur avec ça :
+
+      <?php
+
+namespace App\Console\Commands;
+
+use Illuminate\Console\Command;
+use App\User;
+
+class UserAdmin extends Command
+{
+    /**
+     * The name and signature of the console command.
+     *
+     * @var string
+     */
+    protected $signature = 'user:admin {name}';
+
+    /**
+     * The console command description.
+     *
+     * @var string
+     */
+    protected $description = 'Make a user an admin, or remove admin privileges.';
+
+    /**
+     * Create a new command instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        parent::__construct();
+    }
+
+    /**
+     * Execute the console command.
+     *
+     * @return mixed
+     */
+    public function handle()
+    {
+        $name = $this->argument('name');
+        $user = User::whereUsername($name)->orWhere('name', $name)->first();
+        if(!$user) {
+            $this->error('Could not find any user with that username or id.');
+            exit;
+        }
+        $this->info('Found username: ' . $user->username);
+        $state = $user->is_admin ? 'Remove admin privileges from this user?' : 'Add admin privileges to this user?';
+        $confirmed = $this->confirm($state);
+        if(!$confirmed) {
+            exit;
+        }
+
+        $user->is_admin = !$user->is_admin;
+        $user->save();
+        $this->info('Successfully changed permissions!');
+    }
+}
+
+
+    </pre></tr></td></table>
+    <a href="https://sharetodiaspora.github.io/?title=Urgelle-article14&url=https://www.urgelle.fr/article14" target="_blank">
+    		<img src="images/diaspora.png" style="border: 0px solid;" />
+  </body>
+</html>

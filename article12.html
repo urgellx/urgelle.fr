@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Urgelle - Quête vers l'anonymat</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
+  </head>
+  <body>
+   <div>
+    <h1 id="articles"><a href="articles">
+    <p class="Left"style="font-size 40px;">Liste d'articles</p>  </a></h1>
+    <table>
+
+      <tr><td bgcolor=#383838><h2>
+      <p class="Mur" style="text-align:center;font-size:30px">Quête vers l'anonymat</p></h2>
+    </div></tr></td>
+    <tr><td bgcolor=#383838>
+    <pre class="Tur" style="font-size: 20px;text-align: center">
+      Bonjour, cela fait longtemps non ? Aujourd'hui je vais parler de ma quête vers
+      la sûreté de mes données personnelles ainsi que la protection de ma vie privée,
+      je vais parler du pourquoi et du comment j'essaie d'arriver à une espèce de
+      perfection dans la vie privée, et pourquoi, sûrement à cause de mon manque
+      d'expérience, je pense que c'est possible d'être presque complètement anonyme au
+      jour le jour sur internet même sans trop vous prendre la tête.
+      Pour commencer, je vais me présenter et présenter certaines de mes passions qui
+      pourraient poser problème lors de ma quête vers l'anonymat et l'invisibilité
+      sur le web. Je suis, du moins, j'étais lorsque j'ai commencé ce voyage, un
+      avide consommateur de jeux vidéos; je me suis acheté un pc couteux pour pouvoir
+      jouer aux derniers jeux et bien sûr, il était neuf. Cela pose problème car de
+      nos jours, la plupart des jeux sont liés à des comptes, comme des comptes
+      Steam, des comptes GOG, ou même, l'horreur, des comptes Origin. Car, hélas,
+      même quand vous achetez le jeu avec la boîte, comme ce que j'ai fait avec
+      Cyberpunk 2077 (qui est le dernier jeu que j'ai acheté neuf en physique) vous
+      vous retrouvez avec un code pour télécharger le jeu au lieu d'un ou deux
+      blu-rays dans la boîte. Mais ce problème est accentué si l'on prend en compte
+      que la plupart des jeux ne fonctionnent que sous Windows ou sous MACOS. Pour
+      trouver une solution à ce problème, j'ai fait simple, et j'ai fait comme
+      conseillé. J'ai créé plusieurs adresses mail, environ une dizaine, j'ai lié GOG
+      à l'une, Steam à l'autre, et je fais tout tourner sous KVM/QEMU ce qui me donne
+      une impression de sécurité et l'impression de tromper à la fois Microsoft (
+      même s'ils se rendent bien compte que j'utilise une machine virtuelle car ça
+      s'affiche comme tel dans Task Manager) ainsi que Steam et les ayant droits du
+      jeu qui ont mis qu'ils avaient bien le droit de m'espionner dans leur EULA.
+
+      Ensuite vint un second problème, je suis addict à tout ce qui est critique ou
+      revue de jeux-vidéos et j'adore les écouter en arrière-plan, mais si je les
+      écoute directement depuis mon ordinateur sans machine virtuelle, sans passer
+      par Tor ou par un VPN, Youtube saura qui je suis. Ce problème est encore une
+      fois résolu par l'utilisation d'une machine virtuelle, mais cette fois qui
+      utilise Linux, tout simplement car je n'ai pas confiance en Microsoft ou en
+      n'importe quelle autre grosse entreprise. Dans cette machine virtuelle, j'ai
+      installé Tor Browser, j'ai mis l'option de sécurité à celle du milieu, j'ai
+      laissé Javascript activé pour pouvoir accéder aux plateformes de vidéos
+      tranquillement, et voilà. Tout est prêt pour un visionnage à l'abri des
+      regards, encore mieux si vous n'utilisez pas Youtube directement mais un site
+      tiers qui sert de front-end ou tout simplement si le créateur que vous regardez
+      poste sur LBRY/Odysee.
+
+      Et enfin, mon troisième passe-temps, un plus récent et plus amusant, mais qui
+      demande d'être plus strict, depuis quelques mois, je prends plaisir à me
+      balader sur le dark net de Tor, passer d'onion en onion, ça me donne une
+      espèce de nostalgie du début des années 2000 avec la plupart des sites qui ne
+      sont pas professionnels et qui sont faits par des particuliers dans leur temps
+      libre, des blogs, des théories du complot, certes, de la drogue, mais
+      également des forums, des conseils, des chats en direct et étonamment beaucoup
+      de personnes, j'étais même tombé sur un site onion relativement populaire avec
+      presque trente personnes dans le même chat dont une dizaine qui étaient
+      actives. Pour ce passe-temps, j'ai décidé de prendre quelques mesures
+      supplémentaires, j'ai de nouveau créé une nouvelle machine virtuelle, qui
+      tourne une version d'Arch Linux avec le kernel linux-hardened (même si je ne
+      sais même pas si ça risque de trop m'aider, autant combler les moindres failles
+      à l'avance), une nouvelle installation de Tor Browser, avec le niveau de
+      sécurité au maximum et javascript désactivé dans about:config.
+      Avec cette machine, qui n'a pas la capacité d'envoyer du son vers ma machine
+      hôte, je me sens protégé, mais, je n'ose même pas la laisser tourner en
+      arrière-plan trop longtemps sans m'en occuper, j'ai peur à ce point.
+
+      Au niveau de mon téléphone cellulaire, je n'ai pas fait grand chose, je n'ai
+      pas acheté le PinePhone, mon téléphone n'est pas compatible avec GrapheneOS,
+      donc j'ai tout simplement installé LineageOS, ça m'a pris quinze minutes, je
+      n'ai pas eu besoin de pirater mon téléphone car Google ne sont pas non plus
+      abrutis à ce point. Bref, simple et ça permet de vous donner contrôle sur votre
+      téléphone grâce aux options de développeur, etc.
+
+      Bon, pour les gens qui s'y connaissent un peu en informatique, il peut paraître
+      évident que passer au niveau supérieur est relativement facile, mais pour les
+      moins "nerd" d'entre nous, je vais expliquer comment. C'est tout simple, il
+      suffit d'installer QubesOS sur votre ordinateur. Qu'est-ce que QubesOS, c'est
+      une distribution de Linux axée sur la sécurité par l'isolation; qu'est-ce que
+      ça veut dire ? Grossièrement, QubesOS virtualise tout, vous avez des paquets
+      de machines virtuelles rangées par niveau de confiance, le niveau le plus bas
+      avec une machine disposable Whonix ( connectée au réseau Tor ), et le niveau le
+      plus haut avec votre coffre-fort où seront stockés vos mots de passe, etc; et
+      entre les deux, votre machine pour travailler, votre machine pour vos affaires
+      personnelles. Je n'ai parlé que des machines par défaut mais vous pouvez
+      vraiment en créer autant que vous voulez. Et ce qui est encore plus
+      intéressant, c'est que, comme pour une machine virtuelle normalle, vous avez le
+      contrôle sur le fait qu'elle ait accès à votre webcam ou non, à votre réseau
+      ou non, à votre disque dur ou non, mais contrairement à ce que la plupart des
+      gens savent faire avec un outil de virtualisation normal comme QEMU ou
+      VirtualBox, vous pouvez ajouter individuellement si telle machine virtuelle doit
+      passer par le réseau Tor, passer par un VPN randomisé ou non, vous avez
+      vraiment le contrôle total de votre machine, et c'est le point marketing (même
+      si c'est un logiciel libre et gratuit) premier de QubesOS, vous êtes maître de
+      votre ordinateur à présent. Alors bien sûr, je n'ai pas parlé de Qube-USB et de
+      AntiEvilMaid, mais si je me mets à en parler, je vais finir par remâcher et
+      recracher tout ce qui est dit dans la documentation de QubesOS.
+
+      En attendant, je compte installer QubesOS sur l'ordinateur portable que
+      j'aurai prochainement, sûrement la semaine prochaine, je ferai probablement
+      une mise au point à ce moment-là car, je faisais tourner QubesOS sur mon
+      ordinateur principal pendant quelques semaines mais ne pas avoir accès à autant
+      de ressources que nécessaire pour faire du montage vidéo ou jouer à des jeux
+      vidéos fut une taxe trop grande pour moi.
+    </pre></tr></td></table>
+    <a href="https://sharetodiaspora.github.io/?title=Urgelle-article12&url=https://www.urgelle.fr/article12" target="_blank">
+    		<img src="images/diaspora.png" style="border: 0px solid;" />
+
+  </body>
+</html>

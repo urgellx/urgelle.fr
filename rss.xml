@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rss version="2.0">
+    <channel>
+
+        <title>Urgelle</title>
+        <description>Les articles et nouvelles d'Urgelle</description>
+        <link>https://urgelle.fr/rss.xml</link>
+        <image>
+        <title> Urgelle</title>
+        <url>https://urgelle.fr/images/urgelle.png</url>
+        <link>https://urgelle.fr/rss.xml</link>
+
+                                <item>
+            <title>Théorie du complot</title>
+            <guid isPermaLink="false">https://urgelle.fr/article17</guid>
+            <link>https://urgelle.fr/article17</link>
+            <description>Comment les théories du complot se réalisent</description>
+            <pubDate>Thu, 03 Mar 2022 17:51:04 GMT</pubDate>
+        </item>
+
+
+                                <item>
+            <title>Tact et COVID-19</title>
+            <guid isPermaLink="false">https://urgelle.fr/article16</guid>
+            <link>https://urgelle.fr/article16</link>
+            <description>Le manque de tact des gens lors de la crise</description>
+            <pubDate>Thu, 03 Mar 2022 17:51:04 GMT</pubDate>
+        </item>
+                        <item>
+            <title>Logiciels libres et fourmis</title>
+            <guid isPermaLink="false">https://urgelle.fr/article15</guid>
+            <link>https://urgelle.fr/article15</link>
+            <description>Avantages des logiciels libres et fourmis</description>
+            <pubDate>Thu, 03 Mar 2022 17:51:04 GMT</pubDate>
+        </item>
+                <item>
+            <title>J'ai aidé un projet libre. </title>
+            <guid isPermaLink="false">https://urgelle.fr/article14</guid>
+            <link>https://urgelle.fr/article14</link>
+            <description>J'ai enfin aidé un projet en donnant une
+            solution à un problème</description>
+            <pubDate>Thu, 19 Feb 2022 17:51:04 GMT</pubDate>
+        </item>
+        <item>
+            <title>J'ai enfin créé mon propre flux RSS ! </title>
+            <guid isPermaLink="false">https://urgelle.fr</guid>
+            <link>https://urgelle.fr</link>
+            <description>Mes zéros lecteurs actuels pourront être alertés lors de la sortie de mes nouveaux articles.</description>
+            <pubDate>Thu, 20 Jan 2022 17:51:04 GMT</pubDate>
+        </item>
+</image>
+    </channel>
+</rss>
